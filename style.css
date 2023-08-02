@@ -20,15 +20,13 @@
   --text-medium: 1.275rem;
   --text-small: 1.125rem;
 
-  --gradient-brand: radial-gradient(
-      at 60% 31%,
-      rgb(255, 131, 139) 0px,
-      transparent 50%
-    ),
+  --gradient-brand: radial-gradient(at 60% 31%,
+      rgb(133, 186, 255) 0px,
+      transparent 50%),
     radial-gradient(at 48% 98%, rgba(0, 255, 166, 0.707) 0px, transparent 50%),
-    radial-gradient(at 84% 67%, rgb(255, 129, 125) 0px, transparent 50%),
-    radial-gradient(at 16% 47%, rgb(255, 90, 112) 0px, transparent 50%),
-    radial-gradient(at 73% 11%, rgb(115, 255, 225) 0px, transparent 50%),
+    radial-gradient(at 84% 67%, rgb(128, 246, 255) 0px, transparent 50%),
+    radial-gradient(at 16% 47%, rgb(14, 87, 205) 0px, transparent 50%),
+    radial-gradient(at 73% 11%, rgb(3, 211, 197) 0px, transparent 50%),
     radial-gradient(at 49% 37%, rgba(255, 249, 89, 0.695) 0px, transparent 50%),
     radial-gradient(at 70% 21%, rgba(58, 255, 186, 0.715) 0px, transparent 50%);
   --easing: cubic-bezier(0.86, 0, 0.07, 1);
@@ -373,11 +371,9 @@ body.light .link::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(
-    600px at var(--x) var(--y),
-    #fffcfc18,
-    transparent 40%
-  );
+  background-image: radial-gradient(600px at var(--x) var(--y),
+      #fffcfc18,
+      transparent 40%);
   border-radius: inherit;
   opacity: 0;
   transition: opacity 0.2s;
@@ -460,7 +456,7 @@ main {
   min-block-size: 100vh;
   position: fixed;
   width: 100%;
-  background-color: #ff5e99;
+  background-color: #4dacf5;
   background-image: var(--gradient-brand);
   transition: 450ms var(--easing);
   z-index: 3;
@@ -514,6 +510,7 @@ main {
   position: relative;
 }
 
+
 body.dark .header {
   background-image: linear-gradient(#0000008b, #000000e6),
     url("assets/images/hero-bg.webp");
@@ -561,6 +558,7 @@ body.light .header {
     text-align: center;
     padding-inline: 0.6rem;
   }
+
   .header-btns {
     flex-direction: column;
     width: 80%;
@@ -580,9 +578,7 @@ body.light .header {
 
 @media (max-width: 885px) {
   .logos {
-    padding-block-start: calc(
-      var(--gutter-x-large) + var(--gutter-x-large) - 2rem
-    );
+    padding-block-start: calc(var(--gutter-x-large) + var(--gutter-x-large) - 2rem);
   }
 }
 
@@ -735,12 +731,12 @@ body.dark .work-links img {
 
 /* Github icon */
 
-.work-links > a:last-child {
+.work-links>a:last-child {
   transition: 0.3s transform ease-in;
 }
 
-.work-links > a:last-child:hover,
-.work-links > a:last-child:focus {
+.work-links>a:last-child:hover,
+.work-links>a:last-child:focus {
   transform: scale(1.1);
 }
 
@@ -845,6 +841,7 @@ body.dark .work-links img {
 }
 
 @media (max-width: 650px) {
+
   .article-box:nth-child(2),
   .article-box:nth-child(3),
   .article-box:last-child {
@@ -954,7 +951,7 @@ body.dark .work-links img {
   font-size: initial;
 }
 
-.testimonial-author > img {
+.testimonial-author>img {
   block-size: 52px;
   inline-size: 52px;
   border-radius: 50%;
@@ -995,6 +992,7 @@ body.dark .work-links img {
   .skills-imgs {
     gap: var(--gutter-large);
   }
+
   .skills-img {
     block-size: 70px;
     inline-size: 70px;
@@ -1162,6 +1160,7 @@ body.light .signatures {
     flex-direction: column-reverse;
     gap: var(--gutter-small);
   }
+
   .footer-text {
     text-align: center;
   }
@@ -1226,8 +1225,8 @@ body.dark .footer-link img {
   -webkit-tap-highlight-color: transparent;
 }
 
-.theme-switch > span,
-.theme-switch > input {
+.theme-switch>span,
+.theme-switch>input {
   cursor: pointer;
 }
 
@@ -1236,7 +1235,7 @@ body.dark .footer-link img {
   color: var(--sub);
 }
 
-.theme-switch > input {
+.theme-switch>input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1248,7 +1247,7 @@ body.dark .footer-link img {
   border-radius: var(--track-size);
 }
 
-.theme-switch > input::after {
+.theme-switch>input::after {
   display: block;
   content: "";
   inline-size: var(--thumb-size);
