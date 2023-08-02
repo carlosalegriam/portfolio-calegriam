@@ -53,7 +53,7 @@ body.dark {
   --body: #989898;
   --border: #c0c0c015;
   --border-dark: #c0c0c02f;
-  --gradient-border: linear-gradient(to left bottom, #7099b2, #0a131e);
+  --gradient-border: linear-gradient(to left bottom, #787878, #0a131e);
   --shadow: 0 1rem 1rem #00000040;
 }
 
@@ -65,7 +65,7 @@ body.light {
   --body: #585b63;
   --border: #62626234;
   --border-dark: #5e5e5e1f;
-  --gradient-border: linear-gradient(to left bottom, #000000c6, #0e0d0d00);
+  --gradient-border: linear-gradient(to left bottom, #000000c6, #131e2f00);
   --shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
 }
 

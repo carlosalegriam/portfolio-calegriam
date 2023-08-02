@@ -118,4 +118,7 @@ logosWrappers.forEach(async (logoWrapper, i) => {
     logos[1].classList.remove("hide", "to-top", "to-bottom");
     logos[2].classList.add("hide", "to-bottom");
   }, 5600);
+  
 });
+
+
